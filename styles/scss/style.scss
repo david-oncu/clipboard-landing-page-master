@@ -1,0 +1,75 @@
+$mobile: 375px;
+$desktop: 1440px;
+
+$cyan: hsl(171, 66%, 44%);
+$blue: hsl(233, 100%, 69%);
+
+
+$darkgray: hsl(210, 10%, 33%);
+$lightgray: hsl(201, 11%, 66%);
+$white: #fff;
+
+$fw400: 400;
+$fw600: 600;
+
+$fs: 18px;
+$font-one: 'Bai Jamjuree', sans-serif;
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    padding: 10%;
+    font: {
+        size: 18px;
+        family: $font-one;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color: $darkgray;
+        margin: 2rem 0;
+    }
+
+    p{
+        color: $lightgray;
+        line-height: 1.8rem;
+        letter-spacing: 0.3px;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .cta-btn-split{
+        margin-block: 4rem 8rem;
+        .cta-btn{
+            color: $white;
+            padding: 1rem 4rem;
+            display:block;
+            width: 100%;
+            text-align: center;
+            border-radius: 10em;
+        }
+        .cta-button-ios{ background-color: $cyan;}
+        .cta-button-mac{ background-color: $blue;}
+    }
+
+
+}

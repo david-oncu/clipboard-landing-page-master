@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 10%;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  width: 100%;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: hsl(210deg, 10%, 33%);
+  margin: 2rem 0;
+}
+body p {
+  color: hsl(201deg, 11%, 66%);
+  line-height: 1.8rem;
+  letter-spacing: 0.3px;
+}
+body .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+body .cta-btn-split {
+  margin-block: 4rem 8rem;
+}
+body .cta-btn-split .cta-btn {
+  color: #fff;
+  padding: 1rem 4rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 10em;
+}
+body .cta-btn-split .cta-button-ios {
+  background-color: hsl(171deg, 66%, 44%);
+}
+body .cta-btn-split .cta-button-mac {
+  background-color: hsl(233deg, 100%, 69%);
+}/*# sourceMappingURL=style.css.map */
