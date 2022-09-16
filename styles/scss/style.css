@@ -8,7 +8,6 @@
 
 body {
   text-align: center;
-  padding: 10%;
   font-size: 18px;
   font-family: "Bai Jamjuree", sans-serif;
 }
@@ -26,6 +25,7 @@ body p {
   color: hsl(201deg, 11%, 66%);
   line-height: 1.8rem;
   letter-spacing: 0.3px;
+  padding-bottom: 4rem;
 }
 body .flex {
   display: flex;
@@ -33,7 +33,7 @@ body .flex {
   gap: 1.5rem;
 }
 body .cta-btn-split {
-  margin-block: 4rem 8rem;
+  margin-block: 0rem 6rem;
 }
 body .cta-btn-split .cta-btn {
   color: #fff;
@@ -45,7 +45,37 @@ body .cta-btn-split .cta-btn {
 }
 body .cta-btn-split .cta-button-ios {
   background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0 5px hsl(171deg, 67%, 32%);
 }
 body .cta-btn-split .cta-button-mac {
   background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 5px hsl(233deg, 60%, 55%);
+}
+body main > *, body footer {
+  padding: 10%;
+}
+body main .hero-section {
+  background-image: url(/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main .hero-section img {
+  width: 35%;
+  padding-block: 4rem;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+body footer img {
+  width: 20%;
+}
+body footer a {
+  color: hsl(210deg, 10%, 33%);
+}
+body footer .footer-col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */
