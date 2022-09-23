@@ -61,7 +61,7 @@ body{
     }
 
     .cta-btn-split{
-        margin-block: 0rem 6rem;
+        margin-block: 0rem 3rem;
         .cta-btn{
             color: $white;
             padding: 1rem 4rem;
@@ -69,13 +69,19 @@ body{
             width: 100%;
             text-align: center;
             border-radius: 10em;
+            transition: filter 200ms;
+
+            &:hover{
+                filter:brightness(110%);
+            }
         }
+
         .cta-button-ios{
              background-color: $cyan;
-             box-shadow: 0 5px $cyan-shadow;}
+             box-shadow: 0 3px $cyan-shadow;}
         .cta-button-mac{ 
             background-color: $blue;
-            box-shadow: 0 5px $blue-shadow;}
+            box-shadow: 0 3px $blue-shadow;}
     }
 
     // layout 

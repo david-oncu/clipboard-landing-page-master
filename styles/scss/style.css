@@ -33,7 +33,7 @@ body .flex {
   gap: 1.5rem;
 }
 body .cta-btn-split {
-  margin-block: 0rem 6rem;
+  margin-block: 0rem 3rem;
 }
 body .cta-btn-split .cta-btn {
   color: #fff;
@@ -42,14 +42,18 @@ body .cta-btn-split .cta-btn {
   width: 100%;
   text-align: center;
   border-radius: 10em;
+  transition: filter 200ms;
+}
+body .cta-btn-split .cta-btn:hover {
+  filter: brightness(110%);
 }
 body .cta-btn-split .cta-button-ios {
   background-color: hsl(171deg, 66%, 44%);
-  box-shadow: 0 5px hsl(171deg, 67%, 32%);
+  box-shadow: 0 3px hsl(171deg, 67%, 32%);
 }
 body .cta-btn-split .cta-button-mac {
   background-color: hsl(233deg, 100%, 69%);
-  box-shadow: 0 5px hsl(233deg, 60%, 55%);
+  box-shadow: 0 3px hsl(233deg, 60%, 55%);
 }
 body main > *, body footer {
   padding: 10%;
