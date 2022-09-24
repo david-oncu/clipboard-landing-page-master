@@ -25,6 +25,9 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   color: hsl(210deg, 10%, 33%);
   margin: 2rem 0;
 }
+body h2 {
+  font-size: 2rem;
+}
 body p {
   color: hsl(201deg, 11%, 66%);
   line-height: 1.8rem;
@@ -70,6 +73,12 @@ body main .hero-section {
 body main .hero-section img {
   width: 35%;
   padding-block: 4rem;
+}
+body .section-3 > p {
+  margin-bottom: 6rem;
+}
+body .section-3 img {
+  width: 20%;
 }
 body footer {
   display: flex;

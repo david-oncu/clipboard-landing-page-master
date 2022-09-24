@@ -53,6 +53,8 @@ body{
         margin: 2rem 0;
     }
 
+    h2{font-size: 2rem;}
+
     p{
         color: $lightgray;
         line-height: 1.8rem;
@@ -94,7 +96,7 @@ body{
 
 
 
-    
+
     // layout start ----------- 
 
     main > *, footer {
@@ -112,6 +114,21 @@ body{
     }
 
     // layout end ----------- 
+
+
+    // section 3 start ----------- 
+
+    .section-3{
+        > p {margin-bottom: 6rem;}
+        img{width:20%;}
+    }
+
+    // section 3 end ----------- 
+
+
+    // pre footer start ----------- 
+
+    // pre footer end ----------- 
 
 
 
