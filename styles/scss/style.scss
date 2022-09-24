@@ -27,6 +27,9 @@ $font-one: 'Bai Jamjuree', sans-serif;
 }
 
 body{
+
+    // global start ------------
+
     text-align: center;
     
     font: {
@@ -36,6 +39,9 @@ body{
 
     a {
         text-decoration: none;
+        transition: color 200ms;
+
+        &:hover{color:$lightgray;}
     }
 
     img {
@@ -84,7 +90,12 @@ body{
             box-shadow: 0 3px $blue-shadow;}
     }
 
-    // layout 
+    // global end ------------
+
+
+
+    
+    // layout start ----------- 
 
     main > *, footer {
         padding: 10%;
@@ -94,10 +105,18 @@ body{
             background-image: url(/images/bg-header-mobile.png);
             background-repeat: no-repeat;
             background-size: cover;
+
             img{width: 35%;
                 padding-block:4rem;}
         }
     }
+
+    // layout end ----------- 
+
+
+
+
+    // footer section ------------
 
     footer{
         display: flex;
@@ -119,6 +138,8 @@ body{
             justify-content: center;
             gap: 2rem;
             font-size: 1.5rem;
-        }
+
+            i{  transition: color 200ms;
+                &:hover{color: $blue;}}}
         
     }}

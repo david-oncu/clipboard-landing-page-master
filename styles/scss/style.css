@@ -13,6 +13,10 @@ body {
 }
 body a {
   text-decoration: none;
+  transition: color 200ms;
+}
+body a:hover {
+  color: hsl(201deg, 11%, 66%);
 }
 body img {
   width: 100%;
@@ -88,4 +92,10 @@ body footer .footer-col-3 {
   justify-content: center;
   gap: 2rem;
   font-size: 1.5rem;
+}
+body footer .footer-col-3 i {
+  transition: color 200ms;
+}
+body footer .footer-col-3 i:hover {
+  color: hsl(233deg, 100%, 69%);
 }/*# sourceMappingURL=style.css.map */
