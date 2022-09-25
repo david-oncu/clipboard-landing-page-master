@@ -80,6 +80,15 @@ body .section-3 > p {
 body .section-3 img {
   width: 20%;
 }
+body .section-4 div {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+body .section-4 div img {
+  width: calc(50% - 10vw);
+}
 body footer {
   display: flex;
   flex-direction: column;
