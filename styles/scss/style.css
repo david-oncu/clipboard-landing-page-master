@@ -52,10 +52,11 @@ body .cta-btn-split .cta-btn {
   width: 100%;
   text-align: center;
   border-radius: 10em;
-  transition: filter 200ms;
+  transition: filter 200ms, transform 200ms;
 }
 body .cta-btn-split .cta-btn:hover {
   filter: brightness(110%);
+  transform: scale(105%);
 }
 body .cta-btn-split .cta-button-ios {
   background-color: hsl(171deg, 66%, 44%);
@@ -64,6 +65,11 @@ body .cta-btn-split .cta-button-ios {
 body .cta-btn-split .cta-button-mac {
   background-color: hsl(233deg, 100%, 69%);
   box-shadow: 0 3px hsl(233deg, 60%, 55%);
+}
+@media screen and (min-width: 40rem) {
+  body {
+    background-color: lightblue;
+  }
 }
 body main > *, body footer {
   padding: 10%;

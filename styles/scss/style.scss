@@ -88,10 +88,11 @@ body{
             width: 100%;
             text-align: center;
             border-radius: 10em;
-            transition: filter 200ms;
+            transition: filter 200ms, transform 200ms;
 
             &:hover{
                 filter:brightness(110%);
+                transform: scale(105%);
             }
         }
 
@@ -101,11 +102,14 @@ body{
         .cta-button-mac{ 
             background-color: $blue;
             box-shadow: 0 3px $blue-shadow;}
+
+    }
+    // desktop
+    @media screen and (min-width: 40rem){
+        background-color: lightblue;
     }
 
     // global end ------------
-
-
 
 
     // layout start ----------- 
@@ -203,5 +207,7 @@ body{
                         transform: scale(115%);}
                     }
         }
+
         
-    }}
+    }
+}
