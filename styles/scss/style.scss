@@ -25,6 +25,10 @@ $fw600: 600;
 $fs: 18px;
 $font-one: 'Bai Jamjuree', sans-serif;
 
+// screen sizes
+
+$breakpoint-desktop: 40rem;
+$breakpoint-tablet: 20rem;
 
 // null
 
@@ -105,8 +109,31 @@ body{
 
     }
     // desktop
-    @media screen and (min-width: 40rem){
-        background-color: lightblue;
+    @media screen and (min-width: $breakpoint-desktop){
+        .hero-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .logo{
+                width: 15%;
+                padding-block: 2rem;
+            }
+
+            .hero-text{
+                max-width: 700px;
+            }
+        }
+
+        .cta-btn-split{
+            flex-direction: row;
+            justify-content: center;
+
+            .cta-btn{
+                width: fit-content;
+            }
+        }
     }
 
     // global end ------------
@@ -116,6 +143,12 @@ body{
 
     main > *, footer {
         padding: 10%;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop){
+        main > *, footer {
+            padding: 5%;
+        }
     }
     main{
         .hero-section{
@@ -127,6 +160,15 @@ body{
                 padding-block:4rem;}
         }
     }
+    @media screen and (min-width: $breakpoint-desktop){
+        .hero-section{
+            background-image: url(/images/bg-header-desktop.png);
+            background-position: bottom;
+        }
+
+    }
+
+    
 
     // layout end ----------- 
 
