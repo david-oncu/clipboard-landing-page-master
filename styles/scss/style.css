@@ -73,10 +73,6 @@ body .cta-btn-split .cta-button-mac {
     justify-content: center;
     align-items: center;
   }
-  body .hero-section .logo {
-    width: 15%;
-    padding-block: 2rem;
-  }
   body .cta-btn-split {
     flex-direction: row;
     justify-content: center;
@@ -104,8 +100,8 @@ body main .hero-section {
   background-size: cover;
 }
 body main .hero-section img {
-  width: 35%;
-  padding-block: 4rem;
+  width: 20%;
+  padding-block: calc(2rem + 2vw);
 }
 @media screen and (min-width: 40rem) {
   body .hero-section {
@@ -162,18 +158,40 @@ body .section-3 img {
   }
   body .section-3-split > * {
     flex-basis: 30%;
+    max-width: 350px;
   }
 }
 
+.section-4 {
+  display: grid;
+  place-items: center;
+}
 .section-4 div {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+  justify-content: center;
 }
 .section-4 div img {
   width: calc(50% - 10vw);
 }
+@media screen and (min-width: 40rem) {
+  .section-4 div {
+    flex-direction: row;
+    max-width: calc(100% - 15vw);
+  }
+}
+
+.pre-footer {
+  padding-block: calc(10% + 2vh);
+  display: grid;
+  place-items: center;
+}
+.pre-footer p {
+  max-width: 700px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -212,4 +230,17 @@ footer .footer-col-3 i {
 footer .footer-col-3 i:hover {
   color: hsl(233deg, 100%, 69%);
   transform: scale(115%);
+}
+@media screen and (min-width: 40rem) {
+  footer {
+    flex-direction: row;
+  }
+  footer > :nth-child(1), footer > :nth-child(3) {
+    flex-grow: 1;
+  }
+  footer > :nth-child(2) {
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -118,10 +118,6 @@ body{
             justify-content: center;
             align-items: center;
 
-            .logo{
-                width: 15%;
-                padding-block: 2rem;
-            }
         }
 
         .cta-btn-split{
@@ -158,8 +154,10 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
 
-            img{width: 35%;
-                padding-block:4rem;}
+            img{
+                width: clamp(15%, 20%, 30%);
+                padding-block: calc(2rem + 2vw);
+            }
         }
     }
     @media screen and (min-width: $breakpoint-desktop){
@@ -246,6 +244,7 @@ body{
 
                 > * {
                     flex-basis: 30%;
+                    max-width: 350px;
                 }
             }
         }
@@ -261,18 +260,26 @@ body{
     // section 4 start ----------- 
 
     .section-4{
-        div{display: flex;
+        display: grid;
+        place-items: center;
+
+        div{
+            display: flex;
             flex-direction: column;
             gap: 4rem;
             align-items: center;
+            justify-content: center;
         
             img{
                 width: calc(50% - 10vw);
             }
         }
-        
+
         @media screen and (min-width: $breakpoint-desktop){
-        
+            div{
+                flex-direction: row;
+                max-width: calc(100% - 15vw);
+            }
         }
     }
 
@@ -285,6 +292,16 @@ body{
 
 
     // pre footer start ----------- 
+
+    .pre-footer{
+        padding-block: calc(10% + 2vh);
+        display: grid;
+        place-items: center;
+
+        p{
+            max-width: $text-width;
+        }
+    }
 
     // pre footer end ----------- 
 
@@ -332,6 +349,19 @@ body{
                     }
         }
 
+        @media screen and (min-width: $breakpoint-desktop){
+            flex-direction: row;
+
+            >:nth-child(1), >:nth-child(3){
+                flex-grow: 1;
+            }
+            >:nth-child(2){
+                flex-grow: 2;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
         
     }
 
