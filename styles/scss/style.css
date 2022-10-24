@@ -77,9 +77,6 @@ body .cta-btn-split .cta-button-mac {
     width: 15%;
     padding-block: 2rem;
   }
-  body .hero-section .hero-text {
-    max-width: 700px;
-  }
   body .cta-btn-split {
     flex-direction: row;
     justify-content: center;
@@ -88,6 +85,9 @@ body .cta-btn-split .cta-button-mac {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  body .flex {
+    flex-direction: row;
   }
 }
 body main > *, body footer {
@@ -112,6 +112,40 @@ body main .hero-section img {
     background-image: url(/images/bg-header-desktop.png);
     background-position: bottom;
   }
+  body .hero-text {
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 40rem) {
+  body .section-1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section-1 > p {
+    max-width: 700px;
+    text-align: center;
+  }
+  body .section-1 div {
+    text-align: left;
+    gap: 6rem;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 40rem) {
+  body .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .section-2 > p {
+    max-width: 700px;
+  }
+  body .section-2 img {
+    max-width: 70%;
+  }
 }
 body .section-3 > p {
   margin-bottom: 6rem;
@@ -119,25 +153,37 @@ body .section-3 > p {
 body .section-3 img {
   width: 20%;
 }
-body .section-4 div {
+@media screen and (min-width: 40rem) {
+  body .section-3-split {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section-3-split > * {
+    flex-basis: 30%;
+  }
+}
+
+.section-4 div {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
 }
-body .section-4 div img {
+.section-4 div img {
   width: calc(50% - 10vw);
 }
-body footer {
+footer {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   background-color: #f5f5f5;
 }
-body footer img {
+footer img {
   width: 20%;
 }
-body footer a {
+footer a {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -145,25 +191,25 @@ body footer a {
   color: hsl(210deg, 10%, 33%);
   transition: transform 200ms;
 }
-body footer a:hover {
+footer a:hover {
   transform: scale(115%);
 }
-body footer .footer-col-2 {
+footer .footer-col-2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
 }
-body footer .footer-col-3 {
+footer .footer-col-3 {
   display: flex;
   justify-content: center;
   gap: 2rem;
   font-size: 1.5rem;
 }
-body footer .footer-col-3 i {
+footer .footer-col-3 i {
   transition: color 200ms, transform 200ms;
 }
-body footer .footer-col-3 i:hover {
+footer .footer-col-3 i:hover {
   color: hsl(233deg, 100%, 69%);
   transform: scale(115%);
 }/*# sourceMappingURL=style.css.map */
