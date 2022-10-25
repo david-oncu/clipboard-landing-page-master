@@ -85,6 +85,15 @@ body .cta-btn-split .cta-button-mac {
   body .flex {
     flex-direction: row;
   }
+  body h1 {
+    font-size: 3rem;
+  }
+  body h2 {
+    font-size: 2.5rem;
+  }
+  body h3 {
+    font-size: 2rem;
+  }
 }
 body main > *, body footer {
   padding: 10%;
@@ -100,7 +109,7 @@ body main .hero-section {
   background-size: cover;
 }
 body main .hero-section img {
-  width: 20%;
+  width: 10%;
   padding-block: calc(2rem + 2vw);
 }
 @media screen and (min-width: 40rem) {

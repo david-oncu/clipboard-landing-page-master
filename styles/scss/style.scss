@@ -112,10 +112,6 @@ body{
     }
     // desktop
     @media screen and (min-width: $breakpoint-desktop){
-        h1,h2,h3,h4,h5,h6{
-            font-size: calc(inherit + 20vw);
-        }
-
         .hero-section{
             display: flex;
             flex-direction: column;
@@ -135,6 +131,16 @@ body{
 
         .flex{
             flex-direction: row;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        h3{
+            font-size: 2rem;
         }
     }
 
@@ -158,8 +164,9 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
 
+
             img{
-                width: clamp(15%, 20%, 20%);
+                width: clamp(10%, 15%, 10%);
                 padding-block: calc(2rem + 2vw);
             }
         }
